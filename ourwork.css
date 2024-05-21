@@ -1,0 +1,798 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #0B0C0C;
+    font-family: sans-serif;
+}
+nav{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+nav img{
+    width: 120px;
+    height: 70px;
+}
+li{
+    text-decoration: none;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+    animation: none;
+    border: 1px solid transparent;
+}
+.currentpage{
+  color: #d2c1af;
+  border: 1px solid #d2c1af;
+}
+.currentpage:hover{
+  animation: none;
+}
+nav a:hover{
+    animation: borderAnimate 2s linear forwards;
+}
+@keyframes borderAnimate {
+    0% {
+      border-color: #d2c1af transparent transparent transparent;
+    }
+    25% {
+      border-color: transparent #d2c1af transparent transparent;
+    }
+    50% {
+      border-color: transparent transparent #d2c1af transparent;
+    }
+    75% {
+      border-color: transparent transparent transparent #d2c1af;
+    }
+    100% {
+      border-color: #d2c1af #d2c1af #d2c1af #d2c1af;
+    }
+  }
+
+
+ .background-image{
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+ }
+ .background-image img{
+  height: 300px;
+ }
+
+/*   our works  */
+
+* { box-sizing: border-box; }
+.carousel {
+  background: #0B0C0C;
+  width: 100%;
+  height: 450px;
+}
+
+.carousel-cell {
+  width: 15%;
+  height: 450px;
+  margin-left: 30px;
+  border-radius: 15px;
+}
+
+.carousel-cell:before {
+  display: block;
+  color: white;
+}
+.carousel-cell  img{
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+
+ 
+
+  /*-- -----------------contact us------------- --*/
+
+  .contactus{
+    margin-top: 50px;
+    background-color: black;
+  }
+.contactus1{
+  width: 30%;
+}
+.contactus1 img{
+  width: 90%;
+  height: 180px;
+}
+.contactus1 p{
+  font-size: 14px;
+  width: 80%;
+  color: white;
+  line-height: 20px;
+}
+.contactus2{
+  width: 30%;
+  margin-left: 50px;
+}
+.contactus2-text{
+  font-size: 24px;
+  color: white;
+  margin-top: 80px;
+}
+.contactus2 a:hover{
+  color: #d2c1af;
+  text-decoration: underline;
+}
+.number i{
+  font-size: 28px;
+  color: white;
+  margin-top: 10px;
+}
+.mail i{
+  font-size: 25px;
+  color: white;
+  margin-top: 15px;
+}
+.number a{
+  font-size: 18px;
+  color: white;
+  margin-left: 20px;
+}
+.mail a{
+  font-size: 18px;
+  color: white;
+  margin-left: 20px;
+}
+.contactus3{
+  width: 40%;
+}
+.contactus3 img{
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width:1450px) and (min-width:1150px){
+  .heading{
+    font-size: 50px !important;
+  }
+  .design,.design2,.design3{
+    display: none;
+  }
+  .text p{
+    left: 0 !important;
+  }
+  .contactus1 img{
+    width: 90%;
+    height: 150px;
+  }
+  .contactus3 img{
+    width: 100%;
+    height: 90%;
+  }
+  .contactus{
+    height: 370px !important;
+  }
+  .about-us-text{
+    font-size: 15px;
+  }
+  .how-we-work img{
+    width: 60%;
+    height: 60%;
+   }
+   .how-we-work{
+    height: 500px;
+   }
+   .border{
+    border: none;
+  }
+}
+@media screen and (max-width:1150px) and (min-width:850px){
+  nav a{
+    font-size: 10px !important;
+  }
+  nav{
+    height: 70px;
+  }
+  nav img{
+    width: 100px;
+    height: 60px;
+  }
+  .section1-1 img{
+    height: 300px;    
+  }
+  .heading{
+    font-size: 40px !important;
+  }
+  .heading2{
+    font-size: 22px !important;
+  }
+  .heading3{
+    font-size: 12px !important;
+  }
+  .design,.design2,.design3{
+    display: none;
+  }
+  .text p{
+    left: 0 !important;
+  }
+
+
+  .carousel-cell {
+    width: 15%;
+    height: 350px;
+  }
+  .carousel{
+    height: 350px;
+  }
+
+
+
+  .how-we-work{
+    height: 400px;
+  }
+  .how-we-work img{
+    width: 60%;
+    height: 55%;
+   }
+   .text1{
+    font-size: 14px !important;
+   }
+   .text2{
+    font-size: 22px !important;
+   }
+   .text3{
+    font-size: 16px !important;
+    line-height: 30px !important;
+   }
+
+
+  .about-us-text{
+    font-size: 12px;
+    line-height: 20px;
+    margin-left: 50px;
+    margin-top: 30px;
+  }
+  .about-us-heading{
+    font-size: 28px !important;
+  }
+  .about-us-pic img{
+    width: 250px;
+    height: 250px;
+  }
+  
+  
+  .contactus1 img{
+    width: 80%;
+    height: 100px;
+  }
+  .contactus1 p{
+    font-size: 10px;
+    line-height: 15px;
+  }
+  .contactus2{
+    margin-left: 20px;
+  }
+  .contactus2-text{
+    font-size: 16px;
+    margin-top: 40px;
+  }
+  .mail i,.number i{
+    font-size: 25px;
+  }
+  .mail a, .number a{
+    font-size: 12px;
+  }
+  .contactus3 img{
+    width: 100%;
+    height: 80%;
+  }
+  .contactus{
+    height: 300px !important;
+  }
+  .border{
+    border: none;
+  }
+  
+}
+@media screen and (max-width:850px) and (min-width:550px){
+  .navbox{
+    width: 100% !important;
+  }
+  nav a{
+    font-size: 8px !important;
+    padding: 8px;
+  }
+  nav{
+    height: 50px;
+  }
+  nav img{
+    width: 60px;
+    height: 30px;
+  }
+  .section1{
+    height: 350px;
+  }
+  .section1-1 img{
+    height: 200px;    
+  }
+  .heading{
+    font-size: 25px !important;
+  }
+  .heading2{
+    font-size: 16px !important;
+  }
+  .heading3{
+    font-size: 10px !important;
+    line-height: 15px !important;
+  }
+  .section1 button{
+    padding: 8px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 10px;
+}
+  .design,.design2,.design3{
+    display: none;
+  }
+  .text p{
+    left: 0 !important;
+  }
+
+
+  .carousel-cell {
+    width: 15%;
+    height: 250px;
+  }
+  .carousel{
+    height: 250px;
+  }
+
+
+
+  .how-we-work{
+    height: 300px;
+  }
+  .how-we-work img{
+    width: 60%;
+    height: 50%;
+   }
+   .text1{
+    font-size: 10px !important;
+   }
+   .text2{
+    font-size: 15px !important;
+   }
+   .text3{
+    font-size: 8px !important;
+    line-height: 20px !important;
+   }
+
+
+   .about-us{
+    height: 250px;
+   }
+  .about-us-text{
+    font-size: 8px;
+    line-height: 10px;
+    margin-left: 50px;
+    margin-top: 30px;
+  }
+  .about-us-heading{
+    font-size: 22px !important;
+  }
+  .about-us-pic img{
+    width: 150px;
+    height: 150px;
+  }
+  
+  
+  .contactus1 img{
+    width: 80%;
+    height: 70px;
+  }
+  .contactus1 p{
+    font-size: 8px;
+    line-height: 10px;
+  }
+  .contactus2{
+    margin-left: 0px;
+  }
+  .contactus2-text{
+    font-size: 12px;
+    margin-top: 40px;
+  }
+  .mail i,.number i{
+    font-size: 12px;
+  }
+  .mail a, .number a{
+    font-size: 8px;
+  }
+  .contactus3 img{
+    width: 100%;
+    height: 70%;
+  }
+  .contactus{
+    height: 220px !important;
+  }
+
+
+
+  .copyright{
+    font-size: 8px;
+  }
+  .border{
+    border: none;
+  }
+  
+}
+
+@media screen and (max-width:550px) and (min-width:250px){
+  .navbox{
+    width: 100% !important;
+  }
+  .contact:hover{
+    border: none !important;
+  }
+  nav a{
+    font-size: 14px !important;
+    padding: 8px !important;
+    border: none;
+    animation: none;
+  }
+  nav{
+    height: 0px;
+    flex-direction: column;
+    list-style: none;
+    transition: 0.5s;
+    position: fixed;
+    width: 100%;
+    top: 60px;
+    z-index: 999999;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    background-color: #191b1d;
+  }
+  nav img{
+    display: none;
+  }
+
+  .mobilelogo{
+    display: block !important;
+  }
+  #open{
+    display: block !important;
+    cursor: pointer;
+  }
+  #close{
+    display: block !important;
+    color: white;
+    cursor: pointer;
+  }
+
+  .mobilelogo img{
+    width: 90px;
+    height: 50px;
+    margin-left: 15px;
+
+  }
+  
+.contact{
+  border: none !important;
+  color: white !important;
+}
+.mobile{
+  position: fixed; top: 0; z-index: 999; width: 100%; height: 60px; background-color: #000000;
+}
+
+  
+  .section1{
+    height: 280px;
+    width: 90%;
+    margin-top: 150px;
+  }
+  .wrap1{
+    flex-wrap: wrap;
+    width: 90% !important;
+  }
+  .section1-1 img{
+    height: 300px;
+    width: 400px;    
+  }
+  .heading{
+    font-size: 34px !important;
+  }
+  .heading2{
+    font-size: 14px !important;
+  }
+  .heading3{
+    font-size: 10px !important;
+    line-height: 15px !important;
+    width: 90%;
+  }
+  .section1 button{
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 8px;
+    margin-top: 10px;
+}
+  .design,.design2,.design3{
+    display: none;
+  }
+  .text p{
+    left: 0 !important;
+  }
+
+
+  .wrap2{
+    width: 90% !important;
+  }
+  .margindec{
+    margin-top: 50px !important;
+  }
+  .small{
+    font-size: 22px !important;
+    height: 20px !important;
+  }
+
+  .margindec2{
+    margin-top: 80px !important;
+  }
+  .margindec3{
+    margin-top: 0px !important;
+  }
+  .services-box{
+    height: 250px;
+    width: 400px;
+    margin-top: 20px !important;
+  }
+  .services-box img{
+    width: 42px;
+    height: 42px;
+  }
+  .services-box1{
+    margin-top: 20px;
+    margin-left: 20px;
+    height: 100%;
+  }
+  .services-box p{
+    width: 100%;
+    color: white;
+    font-size: 12px;
+  }
+  .title{
+    font-size: 22px !important;
+    width: 100%;
+    font-weight: bold;
+  }
+  .services-box1 a{
+    font-size: 14px !important;
+    margin-top: 20px !important;
+  }
+
+
+  .carousel-cell {
+    width: 25%;
+    height: 220px;
+    border-radius: none !important;
+
+  }
+  .carousel{
+    height: 220px;
+  }
+  .carousel-cell img{
+    border-radius: none !important;
+  }
+
+
+
+  .how-we-work{
+    height: 280px;
+    width: 300px;
+  }
+  .heightreduce{
+    height: 240px;
+  }
+  .unhide{
+    display: block;
+    display: flex;
+    justify-content: center;
+  }
+  .hide{
+    display: none;
+  }
+  .how-we-work img{
+    width: 90%;
+    height: 100%;
+   }
+   .text{
+    margin-top: 30px;
+    margin-left: 0px;
+    width: 300px;
+   }
+   .text1{
+    font-size: 18px !important;
+    text-align: center;
+   }
+   .text2{
+    font-size: 22px !important;
+    text-align: center;
+   }
+   .text3{
+    font-size: 12px !important;
+    line-height: 15px !important;
+    list-style: none;
+   }
+   
+
+   .our-aim{
+    height: 300px;
+    width: 400px;
+    margin-top: 40px;
+  }
+  .our-aim1{
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  .our-aim1 img{
+    width: 40px;
+    height: 40px;
+  }
+  .aimtext1{
+    font-size: 18px !important;
+  }
+  .aimtext2{
+    font-size: 13px !important;
+  }
+
+
+
+  .clientwrap{
+    width: 95% !important;
+    flex-wrap: nowrap;
+  }
+  .clients{
+    width: 150px;
+    height: 100px;
+    margin-top: 50px;
+  }
+  .clients1{
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  .clients1 img{
+    width: 32px;
+    height: 32px;
+  }
+  #counter,#counter2 {
+    font-size: 30px;
+    margin-left: 10px;
+  }
+  #plus {
+    font-size: 30px;
+    margin-left: 20px;
+    position: relative;
+    right: 20px;
+  }
+  .client-text{
+    font-size: 12px !important;
+  }
+
+
+   .about-us{
+    margin-top: 20px;
+    flex-wrap: wrap-reverse;
+    background-color: #0B0C0C;
+   }
+  .about-us-text{
+    width: 100% !important;
+    height: 190px;
+    background-color: #191b1d;
+    margin-left: 0px;
+
+  }
+  .about-us-text-p{
+    font-size: 8px;
+    line-height: 9px;
+    width: 90%;
+    margin-left: 20px;
+  }
+  .about-us-heading{
+    font-size: 16px !important;
+    text-align: center;
+    margin-left: 0;
+    margin-top: 10px;
+
+  }
+  .about-us-pic img{
+    width: 150px;
+    height: 150px;
+  }
+  .about-us-pic{
+    width: 100%;
+    height: 170px;
+  }
+  
+
+
+  .contactus1pic{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .contactus1 img{
+    width: 60%;
+    height: 120px;
+  }
+  .contactus1text{
+    display: none;
+  }
+  .contactus1 p{
+    font-size: 8px;
+    line-height: 11px;
+  }
+  .contactus2{
+    margin-left: 10px;
+  }
+  .contactus2-text{
+    font-size: 18px;
+    margin-top: 20px;
+    text-decoration: underline;
+    color: white;
+  }
+  .mail i,.number i{
+    font-size: 20px;
+  }
+  .mail a, .number a{
+    font-size: 14px;
+    margin-left: 20px;
+  }
+  .contactus3 img{
+    width: 100%;
+    height: 80%;
+  }
+  .contactus{
+    height: 570px !important;
+    flex-wrap: wrap;
+  }
+  .mail{
+    position: relative;
+    bottom: 5px;
+  }
+  .number{
+    margin-top: 0px;
+    position: relative;
+    bottom: 10px;
+  }
+  .contactus1{
+    width: 300px;
+    height: 120px;
+  }
+  .contactus2{
+    width: 300px;
+    height: 130px;
+  }
+  .contactus3{
+    width: 300px;
+    height: 250px;
+  }
+
+
+
+  .copyright{
+    font-size: 7px;
+  }
+  .copyicon{
+    margin-right: 5px !important;
+  }
+  .border{
+    border: none;
+  }
+  .services-box:hover{
+    transform: none;
+  }
+  .our-aim:hover{
+    transform: none;
+  }
+  
+}
